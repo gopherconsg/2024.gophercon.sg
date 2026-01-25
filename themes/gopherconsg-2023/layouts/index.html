@@ -3,6 +3,9 @@
 
     <div class="hero">
       <div class="container">
+        <h3 class="text-center">Thank you! See you in <a href="https://2026.gophercon.sg">2026</a>!</a></h2>
+      </div>
+      <div class="container">
         <div class="antialiased hero-text">
           <h1>GopherCon Singapore</h1>
           <h2>22&ndash;24 January 2025</h2>
@@ -52,20 +55,6 @@
         </ul>
       </div>
     </div>
-
-    <section id="tickets" class="mb-16">
-      <div class="container">
-        <div class="text-center col-lg-8 col-lg-offset-2">
-            {{ with .Site.Data.index.tickets.headline }}
-            <h2 class="pt-[4rem] mb-[3rem] md:pt-[6rem] text-center">{{ . }}</h2>
-            {{ end }}
-            <tito-widget event="gopherconsg/2025"></tito-widget>
-            {{ with .Site.Data.index.tickets.policy }}
-            {{ . | markdownify }}
-            {{ end }}
-        </div>
-      </div>
-    </section>
 
     {{ partial "code-of-conduct.html" }}
 
